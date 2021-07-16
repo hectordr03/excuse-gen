@@ -1,0 +1,23 @@
+.homeContainer {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .message {
+    text-align: center;
+  }
+  
+  // .excuseContainer{
+  //   border: solid red 1px;
+  //   display: flex;
+  //   height: 15rem;
+  //   width: 100%;
+  //   justify-content: space-evenly;
+  //   align-items: center;
+  //   font-weight: bold;
+  // }
