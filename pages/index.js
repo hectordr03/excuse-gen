@@ -12,13 +12,19 @@ class Home extends React.Component {
 		};
 
 		this.handleClick = this.handleClick.bind(this);
+		this.close = this.close.bind(this);
 	}
 	//TODO: When user clicks "generate" btn create random excuse using "intro", "scapegoat", and "delay" structure ::DONE::
 
 	handleClick = () => {
-		let current = this.state.showExcuse;
 		this.setState({
-			showExcuse: !current,
+			showExcuse: true,
+		});
+	};
+
+	close = () => {
+		this.setState({
+			showExcuse: false,
 		});
 	};
 
@@ -33,10 +39,13 @@ class Home extends React.Component {
 				</h1>
 				<button onClick={this.handleClick}>Generate!</button>
 				{this.state.showExcuse === true ? (
-					<div className={styles.excuse}>
-						<Intro className={styles.child}/>
-						<Scapegoat className={styles.child}/>
-						<Delay className={styles.child}/>
+					<div>
+						<div className={styles.excuse}>
+							<Intro />
+							<Scapegoat />
+							<Delay />
+						</div>
+						<button onClick={this.close}>Close</button>
 					</div>
 				) : null}
 			</div>
