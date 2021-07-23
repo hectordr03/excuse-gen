@@ -39,8 +39,8 @@ class Home extends React.Component {
 				</h1>
 				<button onClick={this.handleClick}>Generate!</button>
 				{this.state.showExcuse === true ? (
-					<div className={styles.excuse}>
-						<div className={styles.container}>
+					<div className={styles.container}>
+						<div className={styles.excuse}>
 							<Intro />
 							<Scapegoat />
 							<Delay />
