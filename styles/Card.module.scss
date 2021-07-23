@@ -1,0 +1,30 @@
+$primary: blue;
+
+.card {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border: 3px solid green;
+	width: 40ch;
+	border-radius: 8px;
+}
+
+.title {
+	text-align: center;
+}
+
+.body {
+	text-align: center;
+	font-size: 1rem;
+	animation: slam 1s;
+}
+
+@keyframes slam {
+	from {
+		// transform: scale(2, 2);
+		opacity: 0;
+	}
+	to {
+		// transform: scale(1, 1);
+        opacity: 1;
+	}
+}
