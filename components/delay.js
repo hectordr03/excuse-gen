@@ -1,3 +1,5 @@
+import styles from '../styles/Card.module.scss';
+
 const Delay = () => {
     const text = [
         " just shit the bed...",
@@ -15,8 +17,9 @@ const Delay = () => {
     const random = Math.floor(Math.random() * (text.length - 1));
 
     return (
-        <div>
-            <p>{text[random]}</p>
+        <div className={styles.card}>
+            <h3 className={styles.title}>Delay</h3>
+            <p className={styles.body}>{text[random]}</p>
         </div>
     )
 }
